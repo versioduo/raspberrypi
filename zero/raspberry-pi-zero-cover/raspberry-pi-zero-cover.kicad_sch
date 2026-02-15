@@ -1,13 +1,13 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "6c8448b4-b04d-47e1-934e-e40cbe27a7be")
 	(paper "A4")
 	(title_block
 		(title "V2 Raspberry Pi Zero")
-		(date "2023-10-11")
-		(rev "1")
+		(date "2026-02-15")
+		(rev "2026-02-15")
 		(company "Versio Duo")
 		(comment 1 "Cover")
 	)
@@ -26,17 +26,16 @@
 				)
 			)
 			(property "Value" "V2-logo"
-				(at -4.572 -5.588 0)
+				(at 0 -6.35 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left bottom)
 					(hide yes)
 				)
 			)
 			(property "Footprint" "V2_Artwork:Logo_Small"
-				(at 0 -8.128 0)
+				(at 0 -8.89 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -62,28 +61,10 @@
 					(hide yes)
 				)
 			)
-			(property "Sim.Enable" "0"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "V2_Artwork:Logo_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
 			(symbol "V2-logo_1_0"
 				(polyline
 					(pts
-						(xy -3.302 2.54) (xy 3.048 2.54) (xy 3.048 -2.54) (xy -3.302 -2.54) (xy -3.302 -1.27)
+						(xy -3.302 2.54) (xy 2.54 2.54) (xy 2.54 -2.54) (xy -3.302 -2.54) (xy -3.302 -1.27)
 					)
 					(stroke
 						(width 0.3)
@@ -93,20 +74,28 @@
 						(type none)
 					)
 				)
+			)
+			(symbol "V2-logo_1_1"
 				(text "V2"
-					(at -0.2055 -0.4053 0)
+					(at -0.508 -0.254 0)
 					(effects
 						(font
 							(size 3 3)
+							(thickness 0.375)
 						)
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "V2_Mechanical:MountingHole_2.5mm_Pad_5mm"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom no)
 			(on_board yes)
@@ -118,7 +107,7 @@
 					)
 				)
 			)
-			(property "Value" "MountingHole_2.5mm_Pad_5mm"
+			(property "Value" "2.5mm_Pad_5mm"
 				(at 0 4.445 0)
 				(effects
 					(font
@@ -145,16 +134,7 @@
 				)
 			)
 			(property "Description" "Mounting Hole with connection"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Enable" "0"
-				(at 0 0 0)
+				(at 0 -12.7 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -213,6 +193,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "V2_PCB_Devices:Button-top"
 			(exclude_from_sim no)
@@ -285,8 +266,9 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
-		(symbol "V2_Production:Order_Number"
+		(symbol "V2_Production:Revision"
 			(exclude_from_sim no)
 			(in_bom no)
 			(on_board yes)
@@ -298,7 +280,7 @@
 					)
 				)
 			)
-			(property "Value" "Order_Number"
+			(property "Value" ""
 				(at 0 -2.54 0)
 				(effects
 					(font
@@ -307,7 +289,7 @@
 					(hide yes)
 				)
 			)
-			(property "Footprint" "V2_Production:Order_Number"
+			(property "Footprint" "V2_Production:Revision"
 				(at 0 -5.08 0)
 				(effects
 					(font
@@ -334,29 +316,10 @@
 					(hide yes)
 				)
 			)
-			(property "Sim.Enable" "0"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Order_Number_0_0"
-				(text "ORDER-NUMBER"
-					(at 0 0 0)
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(symbol "Order_Number_0_1"
+			(symbol "Revision_0_1"
 				(rectangle
-					(start -8.89 1.27)
-					(end 8.89 -1.27)
+					(start -5.08 1.27)
+					(end 5.08 -1.27)
 					(stroke
 						(width 0)
 						(type default)
@@ -366,12 +329,23 @@
 					)
 				)
 			)
+			(symbol "Revision_1_1"
+				(text "Revision"
+					(at 0 0 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
 		)
 		(symbol "V2_RaspberryPi:Zero"
 			(exclude_from_sim no)
 			(in_bom no)
 			(on_board yes)
-			(property "Reference" "H"
+			(property "Reference" "RP"
 				(at -9.906 6.3501 0)
 				(effects
 					(font
@@ -426,67 +400,9 @@
 				)
 			)
 			(symbol "Zero_0_1"
-				(arc
-					(start -10.16 -1.778)
-					(mid -9.9368 -2.3168)
-					(end -9.398 -2.54)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -9.398 5.08)
-					(mid -9.9368 4.8568)
-					(end -10.16 4.318)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center -9.144 -1.524)
-					(radius 0.568)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center -9.144 4.064)
-					(radius 0.568)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
 				(polyline
 					(pts
 						(xy -10.16 4.318) (xy -10.16 -1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -9.398 -2.54) (xy 9.398 -2.54)
 					)
 					(stroke
 						(width 0)
@@ -510,7 +426,7 @@
 				)
 				(polyline
 					(pts
-						(xy 10.16 4.318) (xy 10.16 -1.778)
+						(xy -9.398 -2.54) (xy 9.398 -2.54)
 					)
 					(stroke
 						(width 0)
@@ -520,8 +436,43 @@
 						(type none)
 					)
 				)
+				(arc
+					(start -10.16 4.318)
+					(mid -9.9368 4.8568)
+					(end -9.398 5.08)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -9.398 -2.54)
+					(mid -9.9368 -2.3168)
+					(end -10.16 -1.778)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(circle
-					(center 9.144 -1.524)
+					(center -9.144 4.064)
+					(radius 0.568)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -9.144 -1.524)
 					(radius 0.568)
 					(stroke
 						(width 0)
@@ -542,10 +493,9 @@
 						(type none)
 					)
 				)
-				(arc
-					(start 9.398 -2.54)
-					(mid 9.9323 -2.3123)
-					(end 10.16 -1.778)
+				(circle
+					(center 9.144 -1.524)
+					(radius 0.568)
 					(stroke
 						(width 0)
 						(type default)
@@ -555,9 +505,33 @@
 					)
 				)
 				(arc
-					(start 10.16 4.318)
+					(start 10.16 -1.778)
+					(mid 9.9317 -2.3117)
+					(end 9.398 -2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 9.398 5.08)
 					(mid 9.9359 4.8559)
-					(end 9.398 5.08)
+					(end 10.16 4.318)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 4.318) (xy 10.16 -1.778)
+					)
 					(stroke
 						(width 0)
 						(type default)
@@ -567,17 +541,22 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
-		(symbol "power:GND"
+		(symbol "V2_power:GND"
 			(power)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
+				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "#PWR"
-				(at 0 -6.35 0)
+				(at 0 -7.62 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -586,11 +565,12 @@
 				)
 			)
 			(property "Value" "GND"
-				(at 0 -3.81 0)
+				(at 0 -5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(hide yes)
 				)
 			)
 			(property "Footprint" ""
@@ -611,8 +591,8 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-				(at 0 0 0)
+			(property "Description" ""
+				(at 0 -12.7 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -646,8 +626,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
-					(name "GND"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -663,17 +643,22 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
-		(symbol "power:PWR_FLAG"
+		(symbol "V2_power:PWR_FLAG"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "#FLG"
-				(at 0 1.905 0)
+				(at 0 -7.62 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -682,7 +667,7 @@
 				)
 			)
 			(property "Value" "PWR_FLAG"
-				(at 0 3.81 0)
+				(at -8.89 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -698,7 +683,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -708,7 +693,7 @@
 				)
 			)
 			(property "Description" "Special symbol for telling ERC where power comes from"
-				(at 0 0 0)
+				(at 0 -10.922 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -727,9 +712,9 @@
 			)
 			(symbol "PWR_FLAG_0_0"
 				(pin power_out line
-					(at 0 0 90)
+					(at 0 0 180)
 					(length 0)
-					(name "pwr"
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -748,7 +733,7 @@
 			(symbol "PWR_FLAG_0_1"
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+						(xy 0 0) (xy -1.27 0) (xy -1.905 -1.016) (xy -2.54 0) (xy -1.905 1.016) (xy -1.27 0)
 					)
 					(stroke
 						(width 0)
@@ -759,29 +744,30 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 	)
 	(junction
-		(at 105.41 66.04)
+		(at 138.43 80.01)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "259ace2d-03cc-4efc-aff8-a97b11550fb3")
 	)
 	(junction
-		(at 105.41 81.28)
+		(at 138.43 95.25)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c46d31b6-8861-4d1b-8ecd-502f85ffba12")
 	)
 	(junction
-		(at 105.41 73.66)
+		(at 138.43 87.63)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f25badc8-5db2-458a-a096-279d5b084177")
 	)
 	(wire
 		(pts
-			(xy 105.41 66.04) (xy 105.41 73.66)
+			(xy 138.43 80.01) (xy 138.43 87.63)
 		)
 		(stroke
 			(width 0)
@@ -791,7 +777,7 @@
 	)
 	(wire
 		(pts
-			(xy 105.41 58.42) (xy 105.41 66.04)
+			(xy 138.43 72.39) (xy 138.43 80.01)
 		)
 		(stroke
 			(width 0)
@@ -801,7 +787,7 @@
 	)
 	(wire
 		(pts
-			(xy 105.41 73.66) (xy 105.41 81.28)
+			(xy 138.43 87.63) (xy 138.43 95.25)
 		)
 		(stroke
 			(width 0)
@@ -811,16 +797,16 @@
 	)
 	(symbol
 		(lib_id "V2_Mechanical:MountingHole_2.5mm_Pad_5mm")
-		(at 107.95 66.04 270)
+		(at 140.97 80.01 270)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "319787d4-c502-4634-86e8-9ce9ee884524")
-		(property "Reference" "H103"
-			(at 111.76 64.77 90)
+		(property "Reference" "H102"
+			(at 144.78 78.74 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -828,8 +814,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MountingHole_2.5mm_Pad_5mm"
-			(at 111.76 67.31 90)
+		(property "Value" "2.5mm_Pad_5mm"
+			(at 144.78 81.28 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -838,7 +824,7 @@
 			)
 		)
 		(property "Footprint" "V2_Mechanical:MountingHole_2.5mm_Pad_5mm"
-			(at 97.79 66.04 0)
+			(at 130.81 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -847,7 +833,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 107.95 66.04 0)
+			(at 140.97 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -855,8 +841,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 107.95 66.04 0)
+		(property "Description" "Mounting Hole with connection"
+			(at 140.97 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -870,7 +856,7 @@
 		(instances
 			(project "raspberry-pi-zero-cover"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
-					(reference "H103")
+					(reference "H102")
 					(unit 1)
 				)
 			)
@@ -878,16 +864,16 @@
 	)
 	(symbol
 		(lib_id "V2_RaspberryPi:Zero")
-		(at 140.97 121.92 0)
+		(at 173.99 135.89 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "47254ddd-7452-4346-8e38-4b3c603b2a99")
-		(property "Reference" "H108"
-			(at 152.4 119.38 0)
+		(property "Reference" "RP105"
+			(at 185.42 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -896,7 +882,7 @@
 			)
 		)
 		(property "Value" "Zero"
-			(at 152.4 121.92 0)
+			(at 185.42 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -905,7 +891,7 @@
 			)
 		)
 		(property "Footprint" "V2_RaspberryPi:Zero"
-			(at 140.97 129.286 0)
+			(at 173.99 143.256 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -914,7 +900,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 140.97 121.92 0)
+			(at 173.99 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -923,7 +909,16 @@
 			)
 		)
 		(property "Description" ""
-			(at 140.97 121.92 0)
+			(at 173.99 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" "0"
+			(at 173.99 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -934,24 +929,23 @@
 		(instances
 			(project "raspberry-pi-zero-cover"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
-					(reference "H108")
+					(reference "RP105")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 105.41 81.28 90)
+		(lib_id "V2_power:PWR_FLAG")
+		(at 156.21 58.42 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "5ea9efd2-3330-483b-9248-78fb35c36ff3")
-		(property "Reference" "#FLG0101"
-			(at 103.505 81.28 0)
+		(property "Reference" "#FLG101"
+			(at 156.21 56.515 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -960,16 +954,15 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 101.6 81.28 90)
+			(at 145.288 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 105.41 81.28 0)
+			(at 156.21 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -977,8 +970,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 105.41 81.28 0)
+		(property "Datasheet" ""
+			(at 156.21 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -986,8 +979,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 105.41 81.28 0)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 156.21 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1001,31 +994,24 @@
 		(instances
 			(project "raspberry-pi-zero-cover"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
-					(reference "#FLG0101")
+					(reference "#FLG101")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "V2_Production:Order_Number")
-		(at 140.97 109.22 0)
+		(lib_id "V2_power:GND")
+		(at 156.21 58.42 90)
 		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
+		(exclude_from_sim no)
+		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "7eb06b9d-d894-478a-bc35-8590f2ab48d6")
-		(property "Reference" "INFO101"
-			(at 140.97 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "ORDER-NUMBER"
-			(at 140.97 111.76 0)
+		(fields_autoplaced yes)
+		(uuid "74311fe4-961e-43f0-be86-c1df784ca77a")
+		(property "Reference" "#PWR102"
+			(at 162.56 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1033,8 +1019,17 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "V2_Production:Order_Number"
-			(at 140.97 114.3 0)
+		(property "Value" "GND"
+			(at 161.29 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 156.21 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1043,7 +1038,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 140.97 109.22 0)
+			(at 156.21 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1052,7 +1047,72 @@
 			)
 		)
 		(property "Description" ""
-			(at 140.97 109.22 0)
+			(at 156.21 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0786fb4a-79ab-48ac-8b01-3aab92411292")
+		)
+		(instances
+			(project "raspberry-pi-zero-cover"
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
+					(reference "#PWR102")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "V2_Production:Revision")
+		(at 173.99 123.19 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "7eb06b9d-d894-478a-bc35-8590f2ab48d6")
+		(property "Reference" "INFO101"
+			(at 173.99 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "~"
+			(at 173.99 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "V2_Production:Revision"
+			(at 173.99 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 173.99 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 173.99 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1071,16 +1131,16 @@
 	)
 	(symbol
 		(lib_id "V2_PCB_Devices:Button-top")
-		(at 107.95 121.92 0)
+		(at 140.97 135.89 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8f977aac-b910-4bd9-8aec-d97ae3dc59c2")
 		(property "Reference" "SWT101"
-			(at 111.76 120.65 0)
+			(at 144.78 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1089,7 +1149,7 @@
 			)
 		)
 		(property "Value" "Button-top"
-			(at 111.76 123.19 0)
+			(at 144.78 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1098,7 +1158,7 @@
 			)
 		)
 		(property "Footprint" "V2_PCB_Devices:PCB_Button-top"
-			(at 107.95 127 0)
+			(at 140.97 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1107,7 +1167,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 107.95 121.92 0)
+			(at 140.97 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1116,7 +1176,16 @@
 			)
 		)
 		(property "Description" ""
-			(at 107.95 121.92 0)
+			(at 140.97 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Enable" "0"
+			(at 140.97 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1135,16 +1204,16 @@
 	)
 	(symbol
 		(lib_id "V2_Mechanical:MountingHole_2.5mm_Pad_5mm")
-		(at 107.95 81.28 270)
+		(at 140.97 95.25 270)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "98ac4b2a-4d95-4694-a16b-703832ea3e92")
-		(property "Reference" "H107"
-			(at 111.76 80.01 90)
+		(property "Reference" "H104"
+			(at 144.78 93.98 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1152,8 +1221,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MountingHole_2.5mm_Pad_5mm"
-			(at 111.76 82.55 90)
+		(property "Value" "2.5mm_Pad_5mm"
+			(at 144.78 96.52 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1162,7 +1231,7 @@
 			)
 		)
 		(property "Footprint" "V2_Mechanical:MountingHole_2.5mm_Pad_5mm"
-			(at 97.79 81.28 0)
+			(at 130.81 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1171,7 +1240,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 107.95 81.28 0)
+			(at 140.97 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1179,8 +1248,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 107.95 81.28 0)
+		(property "Description" "Mounting Hole with connection"
+			(at 140.97 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1194,7 +1263,7 @@
 		(instances
 			(project "raspberry-pi-zero-cover"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
-					(reference "H107")
+					(reference "H104")
 					(unit 1)
 				)
 			)
@@ -1202,23 +1271,23 @@
 	)
 	(symbol
 		(lib_id "V2_Mechanical:MountingHole_2.5mm_Pad_5mm")
-		(at 107.95 58.42 270)
+		(at 140.97 72.39 270)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "b5a9ea4e-8814-429b-a837-07a2647096fd")
 		(property "Reference" "H101"
-			(at 113.03 57.15 90)
+			(at 147.32 71.12 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "MountingHole_2.5mm_Pad_5mm"
-			(at 127 59.69 90)
+		(property "Value" "2.5mm_Pad_5mm"
+			(at 153.162 73.66 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1226,7 +1295,7 @@
 			)
 		)
 		(property "Footprint" "V2_Mechanical:MountingHole_2.5mm_Pad_5mm"
-			(at 97.79 58.42 0)
+			(at 130.81 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1235,7 +1304,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 107.95 58.42 0)
+			(at 140.97 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1243,8 +1312,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 107.95 58.42 0)
+		(property "Description" "Mounting Hole with connection"
+			(at 140.97 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1265,8 +1334,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 105.41 81.28 0)
+		(lib_id "V2_power:GND")
+		(at 138.43 95.25 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1274,8 +1343,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fee52d0a-af2d-4b34-bedf-ca777aed07d4")
-		(property "Reference" "#PWR0102"
-			(at 105.41 87.63 0)
+		(property "Reference" "#PWR101"
+			(at 138.43 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1284,15 +1353,16 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 105.41 86.36 0)
+			(at 138.43 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" ""
-			(at 105.41 81.28 0)
+			(at 138.43 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1301,7 +1371,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 105.41 81.28 0)
+			(at 138.43 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1310,7 +1380,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 105.41 81.28 0)
+			(at 138.43 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1324,7 +1394,7 @@
 		(instances
 			(project "raspberry-pi-zero-cover"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
-					(reference "#PWR0102")
+					(reference "#PWR101")
 					(unit 1)
 				)
 			)
@@ -1332,15 +1402,15 @@
 	)
 	(symbol
 		(lib_id "V2_Artwork:V2-logo")
-		(at 107.95 110.49 0)
+		(at 140.97 124.46 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "ff5fa334-854e-4ca7-a359-9c419e0f5264")
 		(property "Reference" "ICON101"
-			(at 108.585 101.6 0)
+			(at 141.605 115.57 0)
 			(effects
 				(font
 					(size 1.778 1.5113)
@@ -1348,15 +1418,16 @@
 			)
 		)
 		(property "Value" "V2-logo"
-			(at 108.585 105.41 0)
+			(at 141.605 119.38 0)
 			(effects
 				(font
 					(size 1.778 1.5113)
 				)
+				(hide yes)
 			)
 		)
 		(property "Footprint" "V2_Artwork:Logo_Small"
-			(at 107.95 118.11 0)
+			(at 140.97 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1365,7 +1436,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 107.95 110.49 0)
+			(at 140.97 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1374,7 +1445,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 107.95 110.49 0)
+			(at 140.97 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1393,16 +1464,16 @@
 	)
 	(symbol
 		(lib_id "V2_Mechanical:MountingHole_2.5mm_Pad_5mm")
-		(at 107.95 73.66 270)
+		(at 140.97 87.63 270)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ff7338d3-651e-41af-8883-2fcfd9cca8c0")
-		(property "Reference" "H105"
-			(at 111.76 72.39 90)
+		(property "Reference" "H103"
+			(at 144.78 86.36 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1410,8 +1481,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MountingHole_2.5mm_Pad_5mm"
-			(at 111.76 74.93 90)
+		(property "Value" "2.5mm_Pad_5mm"
+			(at 144.78 88.9 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1420,7 +1491,7 @@
 			)
 		)
 		(property "Footprint" "V2_Mechanical:MountingHole_2.5mm_Pad_5mm"
-			(at 97.79 73.66 0)
+			(at 130.81 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1429,7 +1500,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 107.95 73.66 0)
+			(at 140.97 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1437,8 +1508,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 107.95 73.66 0)
+		(property "Description" "Mounting Hole with connection"
+			(at 140.97 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1452,7 +1523,7 @@
 		(instances
 			(project "raspberry-pi-zero-cover"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
-					(reference "H105")
+					(reference "H103")
 					(unit 1)
 				)
 			)
@@ -1461,6 +1532,25 @@
 	(sheet_instances
 		(path "/"
 			(page "1")
+		)
+	)
+	(embedded_fonts no)
+	(embedded_files
+		(file
+			(name "V2_A4.kicad_wks")
+			(type worksheet)
+			(data |KLUv/WBhBk0QALbYTiEQtRsmZc5q276ayLS71D6kxbkmoTeIJM7lAHtEAMAAxQFGAD8ARQCbvIHa
+				a/wrVHSazXnPhvzar1BNtH1kxRf5EwCAQPh5F+e0kJq0nmtfKDvj37Jf3xQUlFKqztoXWzE7iAAI
+				iJ6Q5m2d9RAC9jcPPWe/GXf/9ewpPR3+uPbv7bdzvr37wXlr2X8dBHFXu7Z3HUG7Kvrz9qKU7eB2
+				v/MM4n/Mhfg5G5sn7WsDTS2mA1WyssZDsy4YdpEGzfD8Ny+85JzH7H+961FjX/x0qtq0MdaqJ8dx
+				k1KAwF+soV3VFnEoqewX+XNfTaqqPatRlLsbgcKhzs5+29sEzSaWRPZ4txDEjpmZNCoSiiMhaUwy
+				y4Jg3oe5pmhPRSS7MtJAerbfnYNNgaEkuCg6oVzYhbEsF1vRgtxS55zTIVig4URjFFJTI1qYFNIB
+				YESmRusYYvaiF0uSUdhu1Q2lFiOgdmN7VvaH2oWyw9MQXRuZtQQQoIsxFn2ldtnpQiUNa0HvDQCK
+				f/XTisCgEJQEXe/if4EJsakkqj8BMmGAU+ZM/AG8LSEJMfgkOKfSKPhw4rD3ZHfmNZYNfDMigEPJ
+				EBoIDghtm1kJ8BAQ8xyGdkOuFQy33sishFt8DZNX4uNRXJZ5hBy746RJaNtgbfyB613d0dov6Cdg
+				iUQT9BXkf9EiYDuODpB6gKkC|
+			)
+			(checksum "0A61268C685EAF945CA2EA8187370BD3")
 		)
 	)
 )

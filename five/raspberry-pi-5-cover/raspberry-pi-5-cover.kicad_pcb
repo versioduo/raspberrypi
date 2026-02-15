@@ -1,28 +1,28 @@
 (kicad_pcb
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(general
 		(thickness 1.59)
 		(legacy_teardrops no)
 	)
 	(paper "A4")
 	(title_block
-		(date "2023-10-11")
-		(rev "1")
+		(date "2026-02-15")
+		(rev "2026-02-15")
 	)
 	(layers
 		(0 "F.Cu" signal "Front")
-		(31 "B.Cu" signal "Back")
-		(36 "B.SilkS" user "B.Silkscreen")
-		(37 "F.SilkS" user "F.Silkscreen")
-		(38 "B.Mask" user)
-		(39 "F.Mask" user)
-		(44 "Edge.Cuts" user)
-		(45 "Margin" user)
-		(46 "B.CrtYd" user "B.Courtyard")
-		(47 "F.CrtYd" user "F.Courtyard")
-		(49 "F.Fab" user)
+		(2 "B.Cu" signal "Back")
+		(5 "F.SilkS" user "F.Silkscreen")
+		(7 "B.SilkS" user "B.Silkscreen")
+		(1 "F.Mask" user)
+		(3 "B.Mask" user)
+		(25 "Edge.Cuts" user)
+		(27 "Margin" user)
+		(31 "F.CrtYd" user "F.Courtyard")
+		(29 "B.CrtYd" user "B.Courtyard")
+		(35 "F.Fab" user)
 	)
 	(setup
 		(stackup
@@ -68,10 +68,11 @@
 		)
 		(pad_to_mask_clearance 0)
 		(allow_soldermask_bridges_in_footprints no)
+		(tenting front back)
 		(grid_origin 117 115)
 		(pcbplotparams
-			(layerselection 0x00010d0_ffffffff)
-			(plot_on_all_layers_selection 0x0000000_00000000)
+			(layerselection 0x00000000_00000000_55555555_575555df)
+			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
 			(disableapertmacros no)
 			(usegerberextensions yes)
 			(usegerberattributes yes)
@@ -81,7 +82,6 @@
 			(dashed_line_gap_ratio 3.000000)
 			(svgprecision 6)
 			(plotframeref no)
-			(viasonmask no)
 			(mode 1)
 			(useauxorigin no)
 			(hpglpennumber 1)
@@ -89,16 +89,19 @@
 			(hpglpendiameter 15.000000)
 			(pdf_front_fp_property_popups yes)
 			(pdf_back_fp_property_popups yes)
+			(pdf_metadata yes)
+			(pdf_single_document no)
 			(dxfpolygonmode yes)
 			(dxfimperialunits yes)
 			(dxfusepcbnewfont yes)
 			(psnegative no)
 			(psa4output no)
-			(plotreference no)
-			(plotvalue no)
-			(plotfptext yes)
-			(plotinvisibletext no)
+			(plot_black_and_white yes)
 			(sketchpadsonfab no)
+			(plotpadnumbers no)
+			(hidednponfab no)
+			(sketchdnponfab yes)
+			(crossoutdnponfab yes)
 			(subtractmaskfromsilk yes)
 			(outputformat 1)
 			(mirror no)
@@ -138,19 +141,6 @@
 				)
 			)
 		)
-		(property "Footprint" "V2_PCB_Devices:PCB_Button-top"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "87ed696b-6b0c-4a1d-b2a8-637fc6b3f904")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
 			(at 0 0 0)
 			(unlocked yes)
@@ -177,32 +167,8 @@
 				)
 			)
 		)
-		(property "Sim.Enable" "0"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "0cf86da4-cf5c-471e-8509-f07e5eff6f81")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "exclude_from_bom" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "368ae127-b909-4373-aea1-28cbc0b271a1")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(path "/8f977aac-b910-4bd9-8aec-d97ae3dc59c2")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "raspberry-pi-5-cover.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom allow_missing_courtyard)
 		(fp_line
@@ -213,7 +179,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "9506cf17-cf7a-46b5-b617-3777a92857e3")
+			(uuid "6a5e5581-bc74-40c5-9625-e67b9d9c73a1")
 		)
 		(fp_line
 			(start -1.65 5.1)
@@ -223,7 +189,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "d6b36ed4-bbce-456d-b8b9-7f50dd3e8197")
+			(uuid "0d1fc7ea-a75d-463b-a90c-6544c855c37b")
 		)
 		(fp_line
 			(start 1.65 -5.1)
@@ -233,7 +199,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "51892d65-b72d-497e-a36a-ea0a124f03e2")
+			(uuid "320efd29-7fac-4103-85ce-8594343529a6")
 		)
 		(fp_line
 			(start 1.65 5.1)
@@ -243,36 +209,37 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "8b6fdded-6783-491e-a044-be78f04b57e4")
+			(uuid "badebc44-0e13-4b38-8e4d-0f819e8249ae")
 		)
 		(pad "" np_thru_hole circle
 			(at -1.4 -4.85)
 			(size 0.7 0.7)
 			(drill 0.7)
 			(layers "*.Mask")
-			(uuid "a606ce02-7d02-4e46-8a59-786c1f2cbd8b")
+			(uuid "9f6c9b10-aebe-4d10-b4e5-2b5f63b0d185")
 		)
 		(pad "" np_thru_hole circle
 			(at -1.4 4.85)
 			(size 0.7 0.7)
 			(drill 0.7)
 			(layers "*.Mask")
-			(uuid "46c0ccff-6d7c-4f95-a029-e3eb252e28a6")
+			(uuid "2a209725-df80-4125-972b-f36f487fc4fe")
 		)
 		(pad "" np_thru_hole circle
 			(at 1.4 -4.85)
 			(size 0.7 0.7)
 			(drill 0.7)
 			(layers "*.Mask")
-			(uuid "25393be8-f098-4d03-8696-50868f68044d")
+			(uuid "d9f91933-9bd9-496a-8585-8f0fb41523ee")
 		)
 		(pad "" np_thru_hole circle
 			(at 1.4 4.85)
 			(size 0.7 0.7)
 			(drill 0.7)
 			(layers "*.Mask")
-			(uuid "1f11de33-a82a-4b3a-8b6e-274a7a089c99")
+			(uuid "8262c6d8-4d70-4ace-a311-f05b9892cc1c")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "V2_Mechanical:MountingHole_2.5mm_Pad_5mm"
 		(layer "F.Cu")
@@ -291,7 +258,7 @@
 				)
 			)
 		)
-		(property "Value" "MountingHole_2.5mm_Pad_5mm"
+		(property "Value" "2.5mm_Pad_5mm"
 			(at 0 6 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -300,19 +267,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "V2_Mechanical:MountingHole_2.5mm_Pad_5mm"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "274a5c5f-1b45-47d1-b544-6cf73a3b3fba")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -343,46 +297,11 @@
 				)
 			)
 		)
-		(property "Sim.Enable" "0"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "89a88fd4-9fee-4fef-b547-b4f50d8c53c2")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property ki_fp_filters "MountingHole*Pad*")
 		(path "/b5a9ea4e-8814-429b-a837-07a2647096fd")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "raspberry-pi-5-cover.kicad_sch")
-		(attr exclude_from_pos_files exclude_from_bom)
-		(fp_circle
-			(center 0 0)
-			(end 2.6 0)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(fill none)
-			(layer "F.CrtYd")
-			(uuid "d7180ba7-88ed-4607-96f7-8bbf845a67a6")
-		)
-		(fp_text user "${REFERENCE}"
-			(at 0 4 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(uuid "48e1c2b5-cc92-4062-8301-b6260c78c307")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
+		(attr exclude_from_pos_files exclude_from_bom allow_missing_courtyard)
 		(pad "1" thru_hole custom
 			(at 0 0)
 			(size 5 5)
@@ -408,13 +327,14 @@
 			)
 			(uuid "bd7ed537-9ab2-49ce-a969-8ec98ee906c0")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "V2_Artwork:Logo_Small"
 		(layer "F.Cu")
 		(uuid "552eacff-0ed8-4174-aeef-cc4ed8dd5e1b")
 		(at 197 87 90)
 		(property "Reference" "ICON101"
-			(at 0 -3.35 90)
+			(at 0 -3.319443 90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "fb66811b-e185-4b05-870c-dd227f575141")
@@ -426,7 +346,7 @@
 			)
 		)
 		(property "Value" "V2-logo"
-			(at 0 3.73 90)
+			(at 0 3.5 90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "2c936249-28cc-4ade-9fc5-e0b6a98c9dd2")
@@ -437,21 +357,8 @@
 				)
 			)
 		)
-		(property "Footprint" "V2_Artwork:Logo_Small"
-			(at 0 0 90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "dd68fceb-9899-4f2b-9aad-e057dea95ca4")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 90)
+			(at 0.096758 0.030557 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -464,7 +371,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 90)
+			(at 0.096758 0.030557 90)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
@@ -476,33 +383,8 @@
 				)
 			)
 		)
-		(property "Sim.Enable" "0"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "75dbcd0d-7b65-4c5a-94a3-d60e55497131")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "exclude_from_bom" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "34ceda9e-2bf8-4c39-83ef-4f6954a00e59")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property ki_fp_filters "V2_Artwork:Logo_*")
 		(path "/ff5fa334-854e-4ca7-a359-9c419e0f5264")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "raspberry-pi-5-cover.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom allow_missing_courtyard)
 		(fp_poly
@@ -515,9 +397,9 @@
 				(width 0)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "F.Cu")
-			(uuid "43b6df63-5751-4d04-b15c-b3ff0ddeea15")
+			(uuid "7ead1ce4-bbfb-499f-b635-25e103145147")
 		)
 		(fp_poly
 			(pts
@@ -530,9 +412,9 @@
 				(width 0)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "F.Cu")
-			(uuid "9fbd1495-bcc6-4f5b-9345-9ee509d8e4f8")
+			(uuid "507aec2a-91c7-4bd1-9c5c-2a14cc94879a")
 		)
 		(fp_poly
 			(pts
@@ -553,9 +435,9 @@
 				(width 0)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "F.Cu")
-			(uuid "48898881-fb6d-4cc8-bc15-e99a17c87bf4")
+			(uuid "b6839985-1677-4c1f-9ee4-21a1fb49f485")
 		)
 		(fp_poly
 			(pts
@@ -567,9 +449,9 @@
 				(width 0)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "F.Mask")
-			(uuid "b3cf6824-8cee-43ce-8fc9-806adc988e4a")
+			(uuid "90f5494a-ff74-4a65-b9d4-6b2eadbc151f")
 		)
 		(fp_poly
 			(pts
@@ -582,9 +464,9 @@
 				(width 0)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "F.Mask")
-			(uuid "54e4a4f5-aca7-4931-9f3c-6a01fd4fca54")
+			(uuid "a1e3d88c-6d1c-478d-b02f-9e08b5880d4d")
 		)
 		(fp_poly
 			(pts
@@ -605,15 +487,15 @@
 				(width 0)
 				(type solid)
 			)
-			(fill solid)
+			(fill yes)
 			(layer "F.Mask")
-			(uuid "b360f297-a183-4db2-ade0-e61feff8b7af")
+			(uuid "25147433-3a13-418d-9d13-74b6e2e7867a")
 		)
 		(zone
 			(net 0)
 			(net_name "")
 			(layer "F.Cu")
-			(uuid "ab2b51f5-b614-41d9-ad75-32e476ff5545")
+			(uuid "1f686122-7924-44f0-97a5-cf33731d153e")
 			(hatch edge 0.508)
 			(connect_pads
 				(clearance 0)
@@ -627,6 +509,10 @@
 				(copperpour not_allowed)
 				(footprints allowed)
 			)
+			(placement
+				(enabled no)
+				(sheetname "")
+			)
 			(fill
 				(thermal_gap 0.508)
 				(thermal_bridge_width 0.508)
@@ -638,6 +524,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(footprint "V2_Mechanical:MountingHole_2.5mm_Pad_5mm"
 		(layer "F.Cu")
@@ -656,7 +543,7 @@
 				)
 			)
 		)
-		(property "Value" "MountingHole_2.5mm_Pad_5mm"
+		(property "Value" "2.5mm_Pad_5mm"
 			(at 0 6 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -665,19 +552,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "V2_Mechanical:MountingHole_2.5mm_Pad_5mm"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "a770ab60-0f78-4b60-bc02-e4d5d720b4f8")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -708,46 +582,11 @@
 				)
 			)
 		)
-		(property "Sim.Enable" "0"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "a675cb58-7640-496d-88e1-599ffdb8ec02")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property ki_fp_filters "MountingHole*Pad*")
 		(path "/98ac4b2a-4d95-4694-a16b-703832ea3e92")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "raspberry-pi-5-cover.kicad_sch")
-		(attr exclude_from_pos_files exclude_from_bom)
-		(fp_circle
-			(center 0 0)
-			(end 2.6 0)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(fill none)
-			(layer "F.CrtYd")
-			(uuid "402e5188-22dd-477b-be9a-bc168f6d76f4")
-		)
-		(fp_text user "${REFERENCE}"
-			(at 0 4 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(uuid "2f0a52d6-b391-43a6-a7ef-471e727b9dff")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
+		(attr exclude_from_pos_files exclude_from_bom allow_missing_courtyard)
 		(pad "1" thru_hole custom
 			(at 0 0)
 			(size 5 5)
@@ -773,12 +612,13 @@
 			)
 			(uuid "2804e7de-39b7-42d1-bb99-b375d92469e7")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "V2_RaspberryPi:Hat"
 		(layer "F.Cu")
 		(uuid "90f475b8-1a8b-414a-ae49-4df78f2c0cea")
 		(at 117 115)
-		(property "Reference" "H102"
+		(property "Reference" "RP102"
 			(at 2.25 2.5 0)
 			(unlocked yes)
 			(layer "F.SilkS")
@@ -800,19 +640,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "V2_RaspberryPi:Hat"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "37abb14b-68a6-4952-b6c1-520eb9a14de8")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -843,32 +670,8 @@
 				)
 			)
 		)
-		(property "Sim.Enable" "0"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "bb4a6395-3274-48e7-8cda-42472a2087a1")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "exclude_from_bom" ""
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "b7961aae-38d5-461c-b999-00f4ed7ac475")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(path "/6a38367a-95a6-4ec8-a2d3-3be473f0e050")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "raspberry-pi-5-cover.kicad_sch")
 		(attr exclude_from_pos_files exclude_from_bom allow_missing_courtyard)
 		(fp_line
@@ -879,7 +682,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "e4e18543-ae93-428a-b5b4-6a0e06ff317c")
+			(uuid "23270885-f002-4a39-a2ab-4f208857b423")
 		)
 		(fp_line
 			(start 3.5 -56)
@@ -889,7 +692,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "4dcc624f-fba0-4df0-83c4-63f770aed28e")
+			(uuid "bd312bd1-7d1f-4869-a371-c77f3b1b6cac")
 		)
 		(fp_line
 			(start 3.5 0)
@@ -899,7 +702,7 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "50f1af1a-8550-4fdb-a89d-6641a6f59dc5")
+			(uuid "cea8ff1f-ab1f-412f-956b-ca7287aef065")
 		)
 		(fp_line
 			(start 85 -52.5)
@@ -909,54 +712,54 @@
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "d6eb53e6-c604-4069-86f5-c1fd8d5f0583")
+			(uuid "05718d43-1812-4f0f-845e-ac1a76c46af6")
 		)
 		(fp_arc
 			(start 0 -52.5)
-			(mid 1.025126 -54.974874)
+			(mid 1.025126 -54.974873)
 			(end 3.5 -56)
 			(stroke
 				(width 0.05)
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "2f0b61b3-577b-4691-a4a7-35efec135c01")
+			(uuid "5a7600a3-18ed-42b4-af51-e946d5f7d592")
 		)
 		(fp_arc
 			(start 3.5 0)
-			(mid 1.025126 -1.025126)
+			(mid 1.025127 -1.025126)
 			(end 0 -3.5)
 			(stroke
 				(width 0.05)
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "d79c02d3-37db-45c3-87b2-6144d934fd5e")
+			(uuid "f88dd3ef-d804-4b7c-9c81-df25b9150620")
 		)
 		(fp_arc
 			(start 81.5 -56)
-			(mid 83.974874 -54.974874)
+			(mid 83.974873 -54.974874)
 			(end 85 -52.5)
 			(stroke
 				(width 0.05)
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "bcc437fe-3e8e-4f69-90a2-acae8cb3b0b8")
+			(uuid "9a5dc30b-32b2-4246-8ccd-12aae3306f1c")
 		)
 		(fp_arc
 			(start 85 -3.5)
-			(mid 83.974874 -1.025126)
+			(mid 83.974874 -1.025127)
 			(end 81.5 0)
 			(stroke
 				(width 0.05)
 				(type solid)
 			)
 			(layer "Edge.Cuts")
-			(uuid "6d68cbb0-6ff8-4686-b16f-c69cae4cd0bb")
+			(uuid "81cd201d-ad85-48ce-ba86-03502d5a2cee")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 5.25 6.25 0)
+			(at 0.5 3.75 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(uuid "d35a3b6b-25be-4de8-9e0c-9ba95aa9ea16")
@@ -967,6 +770,7 @@
 				)
 			)
 		)
+		(embedded_fonts no)
 	)
 	(footprint "V2_Mechanical:MountingHole_2.5mm_Pad_5mm"
 		(layer "F.Cu")
@@ -985,7 +789,7 @@
 				)
 			)
 		)
-		(property "Value" "MountingHole_2.5mm_Pad_5mm"
+		(property "Value" "2.5mm_Pad_5mm"
 			(at 0 6 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -994,19 +798,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "V2_Mechanical:MountingHole_2.5mm_Pad_5mm"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "def6295d-d0ed-42f5-8883-1740aaa5a52c")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -1037,46 +828,11 @@
 				)
 			)
 		)
-		(property "Sim.Enable" "0"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "a65849fc-523c-416a-8fb9-4015daca8b5e")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property ki_fp_filters "MountingHole*Pad*")
 		(path "/319787d4-c502-4634-86e8-9ce9ee884524")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "raspberry-pi-5-cover.kicad_sch")
-		(attr exclude_from_pos_files exclude_from_bom)
-		(fp_circle
-			(center 0 0)
-			(end 2.6 0)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(fill none)
-			(layer "F.CrtYd")
-			(uuid "954f525d-fa98-4ef2-8afc-ae0168a3ab3d")
-		)
-		(fp_text user "${REFERENCE}"
-			(at 0 4 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(uuid "6cc4cc61-6911-4914-96fc-538a36d64094")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
+		(attr exclude_from_pos_files exclude_from_bom allow_missing_courtyard)
 		(pad "1" thru_hole custom
 			(at 0 0)
 			(size 5 5)
@@ -1102,6 +858,7 @@
 			)
 			(uuid "20e25741-51f9-4471-9340-63f74cd00918")
 		)
+		(embedded_fonts no)
 	)
 	(footprint "V2_Mechanical:MountingHole_2.5mm_Pad_5mm"
 		(layer "F.Cu")
@@ -1120,7 +877,7 @@
 				)
 			)
 		)
-		(property "Value" "MountingHole_2.5mm_Pad_5mm"
+		(property "Value" "2.5mm_Pad_5mm"
 			(at 0 6 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1129,19 +886,6 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Footprint" "V2_Mechanical:MountingHole_2.5mm_Pad_5mm"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "e1828bbd-a076-44c7-95e7-84666492849a")
-			(effects
-				(font
-					(size 1.27 1.27)
 					(thickness 0.15)
 				)
 			)
@@ -1172,46 +916,11 @@
 				)
 			)
 		)
-		(property "Sim.Enable" "0"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "c9bc5976-ffe6-4600-859b-e33249493a8a")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property ki_fp_filters "MountingHole*Pad*")
 		(path "/ff7338d3-651e-41af-8883-2fcfd9cca8c0")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "raspberry-pi-5-cover.kicad_sch")
-		(attr exclude_from_pos_files exclude_from_bom)
-		(fp_circle
-			(center 0 0)
-			(end 2.6 0)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(fill none)
-			(layer "F.CrtYd")
-			(uuid "342e94df-f8b5-4a85-8d11-7b6c2d1c8279")
-		)
-		(fp_text user "${REFERENCE}"
-			(at 0 4 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(uuid "2be49708-8013-4402-811c-f4076d3d55e5")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
+		(attr exclude_from_pos_files exclude_from_bom allow_missing_courtyard)
 		(pad "1" thru_hole custom
 			(at 0 0)
 			(size 5 5)
@@ -1237,8 +946,9 @@
 			)
 			(uuid "eb55232d-02f8-42ae-8d86-09511db37c52")
 		)
+		(embedded_fonts no)
 	)
-	(footprint "V2_Production:Order_Number"
+	(footprint "V2_Production:Revision"
 		(layer "B.Cu")
 		(uuid "4f161d4a-2553-461f-ba70-e111e78e2d2b")
 		(at 197 87 -90)
@@ -1256,10 +966,10 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "ORDER-NUMBER"
+		(property "Value" "~"
 			(at 0 -2.27 90)
 			(unlocked yes)
-			(layer "B.SilkS")
+			(layer "B.Fab")
 			(hide yes)
 			(uuid "a509b906-b5d8-4dfc-93b2-39bd6cdf65e3")
 			(effects
@@ -1270,23 +980,10 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "V2_Production:Order_Number"
-			(at 0 0 -90)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "3cdeb1e0-588d-4a72-9f2b-6e75554a8382")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
 		(property "Datasheet" ""
-			(at 0 0 -90)
+			(at 0 0 90)
 			(unlocked yes)
-			(layer "F.Fab")
+			(layer "B.Fab")
 			(hide yes)
 			(uuid "4eccf977-2125-49e5-9040-6b36da50c22a")
 			(effects
@@ -1294,12 +991,13 @@
 					(size 1.27 1.27)
 					(thickness 0.15)
 				)
+				(justify mirror)
 			)
 		)
 		(property "Description" ""
-			(at 0 0 -90)
+			(at 0 0 90)
 			(unlocked yes)
-			(layer "F.Fab")
+			(layer "B.Fab")
 			(hide yes)
 			(uuid "589b6c36-137e-4539-a1cd-41840a9fc874")
 			(effects
@@ -1307,71 +1005,40 @@
 					(size 1.27 1.27)
 					(thickness 0.15)
 				)
-			)
-		)
-		(property "exclude_from_bom" ""
-			(at 0 0 0)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "4f6de76d-ffae-48b8-a8de-583053d870c1")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-				(justify mirror)
-			)
-		)
-		(property "Sim.Enable" "0"
-			(at 0 0 0)
-			(layer "B.Fab")
-			(hide yes)
-			(uuid "9d35b3d1-823f-4d3e-b6df-c9685a16c2e6")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
 				(justify mirror)
 			)
 		)
 		(path "/7eb06b9d-d894-478a-bc35-8590f2ab48d6")
-		(sheetname "Root")
+		(sheetname "/")
 		(sheetfile "raspberry-pi-5-cover.kicad_sch")
-		(attr exclude_from_pos_files exclude_from_bom)
-		(fp_rect
-			(start -7 0.75)
-			(end 7 -0.75)
-			(stroke
-				(width 0.05)
-				(type default)
-			)
-			(fill none)
-			(layer "B.CrtYd")
-			(uuid "bec2b447-255d-46a9-8cde-3977655d2e42")
-		)
-		(fp_text user "${Order-Number}"
+		(attr exclude_from_pos_files exclude_from_bom allow_missing_courtyard)
+		(fp_text user "${REVISION} (${ISSUE_DATE})"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "B.SilkS")
-			(uuid "e1c7f2c7-0887-4b17-bdbe-9c62ea2d968c")
+			(uuid "8cce3cf4-9a23-4058-90c7-59879378898a")
 			(effects
 				(font
-					(size 0.8 0.8)
-					(thickness 0.12)
+					(size 0.75 0.75)
+					(thickness 0.1)
 				)
 				(justify mirror)
 			)
 		)
-	)
-	(via
-		(at 186.75 87)
-		(size 0.5)
-		(drill 0.2)
-		(layers "F.Cu" "B.Cu")
-		(free yes)
-		(net 1)
-		(uuid "dbafaa95-8ef5-43c5-b56c-1d84fc89a82a")
+		(fp_text user "${REVISION} (${ISSUE_DATE})"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "B.Fab")
+			(uuid "922edc90-2b08-4df7-b820-41e9ff87b445")
+			(effects
+				(font
+					(size 0.75 0.75)
+					(thickness 0.1)
+				)
+				(justify mirror)
+			)
+		)
+		(embedded_fonts no)
 	)
 	(zone
 		(net 1)
@@ -1457,4 +1124,5 @@
 			)
 		)
 	)
+	(embedded_fonts no)
 )
