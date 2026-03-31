@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Raspberry Pi 5")
-		(date "2026-02-15")
-		(rev "2026-02-15")
+		(date "2026-03-31")
+		(rev "2026-03-31")
 		(company "Trusted Platform Module")
 	)
 	(lib_symbols
@@ -3616,6 +3616,17 @@
 					)
 				)
 			)
+			(property "Rating" "1.6N"
+				(at 0 -20.32 0)
+				(show_name yes)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
 			(property "ki_keywords" "switch normally-open pushbutton push-button"
 				(at 0 0 0)
 				(show_name no)
@@ -5201,6 +5212,17 @@
 				)
 			)
 		)
+		(property "Sim.Enable" "0"
+			(at 170.18 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(instances
 			(project "raspberry-pi-5"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
@@ -6254,6 +6276,17 @@
 		)
 		(property "Product" "SKSGACE010"
 			(at 187.96 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Rating" "1.6N"
+			(at 187.96 137.16 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8266,7 +8299,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ab2dc327-78cf-4fb4-a9e2-c83e9b6f8d18")
-		(property "Reference" "#FLG0101"
+		(property "Reference" "#FLG101"
 			(at 58.42 36.195 0)
 			(hide yes)
 			(show_name no)
@@ -8326,7 +8359,7 @@
 		(instances
 			(project "raspberry-pi-5"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
-					(reference "#FLG0101")
+					(reference "#FLG101")
 					(unit 1)
 				)
 			)
@@ -8423,7 +8456,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "adc1f957-8a1c-44be-b57f-e370a93c7866")
-		(property "Reference" "#PWR0130"
+		(property "Reference" "#PWR130"
 			(at 213.36 46.99 0)
 			(hide yes)
 			(show_name no)
@@ -8484,7 +8517,7 @@
 		(instances
 			(project "raspberry-pi-5"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
-					(reference "#PWR0130")
+					(reference "#PWR130")
 					(unit 1)
 				)
 			)
@@ -8942,7 +8975,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c3f9c793-042e-403c-8763-e1951abe49ba")
-		(property "Reference" "#PWR0132"
+		(property "Reference" "#PWR132"
 			(at 54.61 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -9003,7 +9036,7 @@
 		(instances
 			(project "raspberry-pi-5"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be"
-					(reference "#PWR0132")
+					(reference "#PWR132")
 					(unit 1)
 				)
 			)
@@ -9397,6 +9430,17 @@
 			)
 		)
 		(property "Description" ""
+			(at 193.04 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" "0"
 			(at 193.04 165.1 0)
 			(hide yes)
 			(show_name no)
@@ -10055,6 +10099,17 @@
 			)
 		)
 		(property "Description" ""
+			(at 132.08 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" "0"
 			(at 132.08 99.06 0)
 			(hide yes)
 			(show_name no)

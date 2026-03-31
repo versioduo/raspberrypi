@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Raspberry Pi 5")
-		(date "2026-02-15")
-		(rev "2026-02-15")
+		(date "2026-03-31")
+		(rev "2026-03-31")
 		(company "WebThing")
 		(comment 1 "M.2 Connector / LTE")
 	)
@@ -6377,7 +6377,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "734c0057-2381-4c78-9cc0-e6e52cf5f3cd")
-		(property "Reference" "#FLG0201"
+		(property "Reference" "#FLG201"
 			(at 130.81 28.575 0)
 			(hide yes)
 			(show_name no)
@@ -6437,7 +6437,7 @@
 		(instances
 			(project "raspberry-pi-5"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/ef25ccaa-1410-4836-b195-060a12c27ce4"
-					(reference "#FLG0201")
+					(reference "#FLG201")
 					(unit 1)
 				)
 			)
@@ -6455,7 +6455,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7abec8ce-6cfd-42c9-88eb-44ab1bd6ecc9")
-		(property "Reference" "#PWR0226"
+		(property "Reference" "#PWR226"
 			(at 127 30.48 0)
 			(hide yes)
 			(show_name no)
@@ -6516,7 +6516,7 @@
 		(instances
 			(project "raspberry-pi-5"
 				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/ef25ccaa-1410-4836-b195-060a12c27ce4"
-					(reference "#PWR0226")
+					(reference "#PWR226")
 					(unit 1)
 				)
 			)
@@ -8551,6 +8551,17 @@
 			)
 		)
 		(property "Description" ""
+			(at 132.08 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Enable" "0"
 			(at 132.08 101.6 0)
 			(hide yes)
 			(show_name no)

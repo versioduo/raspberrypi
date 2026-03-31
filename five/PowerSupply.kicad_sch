@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Raspberry Pi 5")
-		(date "2026-02-15")
-		(rev "2026-02-15")
+		(date "2026-03-31")
+		(rev "2026-03-31")
 		(company "+3V7")
 	)
 	(lib_symbols
@@ -811,7 +811,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "V2_Converter_DCDC:TPSM33625RDNR"
+		(symbol "V2_Converter_DCDC:TPSM33620S5QRDNRQ1"
 			(pin_names
 				(offset 0.254)
 			)
@@ -821,7 +821,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "U"
-				(at -11.43 15.24 0)
+				(at -10.16 15.24 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -831,8 +831,8 @@
 					(justify left)
 				)
 			)
-			(property "Value" "TPSM33625"
-				(at -11.43 12.7 0)
+			(property "Value" "TPSM33620S5QRDNRQ1"
+				(at -10.16 12.7 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -877,7 +877,7 @@
 					)
 				)
 			)
-			(property "Mouser" "595-TPSM33625RDNR"
+			(property "Mouser" "595-SM33620S5QRDNRQ1"
 				(at 0 -48.26 0)
 				(show_name yes)
 				(do_not_autoplace no)
@@ -899,7 +899,7 @@
 					)
 				)
 			)
-			(property "Product" "TPSM33625RDNR"
+			(property "Product" "TPSM33620S5QRDNRQ1"
 				(at 0 -45.72 0)
 				(show_name yes)
 				(do_not_autoplace no)
@@ -910,7 +910,7 @@
 					)
 				)
 			)
-			(property "Rating" "2.5A"
+			(property "Rating" "2A"
 				(at 0 -50.8 0)
 				(show_name yes)
 				(do_not_autoplace no)
@@ -921,7 +921,7 @@
 					)
 				)
 			)
-			(symbol "TPSM33625RDNR_0_1"
+			(symbol "TPSM33620S5QRDNRQ1_0_1"
 				(rectangle
 					(start -10.16 10.16)
 					(end 10.16 -10.16)
@@ -934,7 +934,7 @@
 					)
 				)
 			)
-			(symbol "TPSM33625RDNR_1_1"
+			(symbol "TPSM33620S5QRDNRQ1_1_1"
 				(pin output line
 					(at 12.7 -7.62 180)
 					(length 2.54)
@@ -1008,7 +1008,7 @@
 					)
 				)
 				(pin no_connect line
-					(at 0 -30.48 180)
+					(at 0 -27.94 180)
 					(length 2.54)
 					(hide yes)
 					(name "SW"
@@ -1027,7 +1027,7 @@
 					)
 				)
 				(pin no_connect line
-					(at 0 -33.02 180)
+					(at 0 -30.48 180)
 					(length 2.54)
 					(hide yes)
 					(name "SW"
@@ -1046,7 +1046,7 @@
 					)
 				)
 				(pin no_connect line
-					(at 0 -27.94 180)
+					(at 0 -33.02 180)
 					(length 2.54)
 					(hide yes)
 					(name "BOOT"
@@ -1640,18 +1640,6 @@
 		)
 		(uuid "02c9e70b-5cbb-4ba4-92d7-993910a32a1d")
 	)
-	(text "RT = VCC -> 1 MHz Switching Frequency"
-		(exclude_from_sim no)
-		(at 140.97 127 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(italic yes)
-			)
-			(justify left bottom)
-		)
-		(uuid "6c67e21f-e38e-482a-b07c-955cf3e4e591")
-	)
 	(junction
 		(at 111.76 93.98)
 		(diameter 0)
@@ -1681,12 +1669,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "74995ec3-0fc4-4131-a708-4361cfb1d2df")
-	)
-	(junction
-		(at 138.43 104.14)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a27c3571-dad0-4a87-905d-d58cbabcc720")
 	)
 	(junction
 		(at 175.26 93.98)
@@ -1763,16 +1745,6 @@
 			(type dash)
 		)
 		(uuid "52528a0c-77e3-4e8b-853f-f0c6d2ee55ca")
-	)
-	(wire
-		(pts
-			(xy 138.43 104.14) (xy 138.43 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "75aedff3-4b32-43ef-affb-a831b5bde926")
 	)
 	(wire
 		(pts
@@ -1976,7 +1948,7 @@
 	)
 	(symbol
 		(lib_id "V2_power:GND")
-		(at 130.81 109.22 0)
+		(at 125.73 104.14 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1986,7 +1958,7 @@
 		(dnp no)
 		(uuid "1b3198a0-b3e0-4c86-934b-2a7e0a710e44")
 		(property "Reference" "#PWR506"
-			(at 130.81 115.57 0)
+			(at 119.38 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1997,7 +1969,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 130.81 114.3 0)
+			(at 120.65 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2008,7 +1980,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 130.81 109.22 0)
+			(at 125.73 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2019,7 +1991,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 130.81 109.22 0)
+			(at 125.73 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2030,7 +2002,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 130.81 109.22 0)
+			(at 125.73 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2178,7 +2150,85 @@
 		)
 	)
 	(symbol
-		(lib_id "V2_Converter_DCDC:TPSM33625RDNR")
+		(lib_id "V2_power:GND")
+		(at 138.43 109.22 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2a38531b-e561-47e6-91f1-6cb0f1b3e5c7")
+		(property "Reference" "#PWR509"
+			(at 132.08 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 133.35 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 138.43 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 138.43 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 138.43 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f40d4f75-1f3c-4423-9046-04ef3104e69c")
+		)
+		(instances
+			(project "raspberry-pi-5"
+				(path "/6c8448b4-b04d-47e1-934e-e40cbe27a7be/1dfd0340-8008-42a6-85d2-0bfe9a8029cf"
+					(reference "#PWR509")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "V2_Converter_DCDC:TPSM33620S5QRDNRQ1")
 		(at 151.13 101.6 0)
 		(unit 1)
 		(body_style 1)
@@ -2198,7 +2248,7 @@
 				)
 			)
 		)
-		(property "Value" "TPSM33625"
+		(property "Value" "TPSM33620S5QRDNRQ1"
 			(at 147.32 88.9 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2243,7 +2293,7 @@
 				)
 			)
 		)
-		(property "Mouser" "595-TPSM33625RDNR"
+		(property "Mouser" "595-SM33620S5QRDNRQ1"
 			(at 151.13 149.86 0)
 			(hide yes)
 			(show_name no)
@@ -2265,7 +2315,7 @@
 				)
 			)
 		)
-		(property "Product" "TPSM33625RDNR"
+		(property "Product" "TPSM33620S5QRDNRQ1"
 			(at 151.13 147.32 0)
 			(hide yes)
 			(show_name no)
@@ -2276,7 +2326,7 @@
 				)
 			)
 		)
-		(property "Rating" "2.5A"
+		(property "Rating" "2A"
 			(at 151.13 152.4 0)
 			(hide yes)
 			(show_name no)
@@ -2676,7 +2726,7 @@
 				)
 			)
 		)
-		(property "Mouser" "810-CNA6P1X7R1H106K2"
+		(property "Mouser" "810-CNC6P1X7R1H106K2"
 			(at 100.33 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -2698,7 +2748,7 @@
 				)
 			)
 		)
-		(property "Product" "CNA6P1X7R1H106K250AE"
+		(property "Product" "CNC6P1X7R1H106K250AE"
 			(at 100.33 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -2737,7 +2787,7 @@
 	)
 	(symbol
 		(lib_id "V2_Capacitor:0603_1u")
-		(at 130.81 106.68 0)
+		(at 128.27 104.14 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2747,7 +2797,7 @@
 		(dnp no)
 		(uuid "583060ee-d321-49bf-b2d8-c223f030b421")
 		(property "Reference" "C504"
-			(at 123.19 105.41 0)
+			(at 126.492 108.204 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2758,7 +2808,7 @@
 			)
 		)
 		(property "Value" "1u"
-			(at 123.19 107.95 0)
+			(at 126.746 110.998 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2769,7 +2819,7 @@
 			)
 		)
 		(property "Footprint" "V2_Capacitor_SMD:C_0603"
-			(at 130.81 123.698 0)
+			(at 111.252 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2780,7 +2830,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 130.81 106.68 0)
+			(at 128.27 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2791,7 +2841,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 130.81 119.38 0)
+			(at 115.57 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2802,7 +2852,7 @@
 			)
 		)
 		(property "Mouser" "810-CGA3E3X7R1H105K0"
-			(at 130.81 127 0)
+			(at 107.95 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2813,7 +2863,7 @@
 			)
 		)
 		(property "Product" "CGA3E3X7R1H105K080AB"
-			(at 130.81 124.46 0)
+			(at 110.49 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2824,7 +2874,7 @@
 			)
 		)
 		(property "Manufacturer" "TDK"
-			(at 130.81 121.92 0)
+			(at 113.03 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2835,7 +2885,7 @@
 			)
 		)
 		(property "Rating" "50V"
-			(at 130.81 129.54 0)
+			(at 105.41 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
